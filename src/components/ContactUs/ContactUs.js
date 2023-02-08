@@ -80,13 +80,11 @@ const ContactUs = () => {
                         </div>
 
                         <div className='mb-5'>
-                            <FloatingLabel controlId="floatingTextarea2">
                                 <Form.Control
                                     as="textarea"
                                     placeholder="What do you need"
                                     style={{ height: '100px' }}
                                 />
-                            </FloatingLabel>
                         </div>
 
                         <Button variant="danger" type="submit" style={{ backgroundColor: '#FF0000', fontSize: "22px", fontWeight: "semibold" }}>
