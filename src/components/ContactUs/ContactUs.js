@@ -39,69 +39,51 @@ const ContactUs = () => {
                         <div className="row">
                             <div className="col-12 col-md-6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                    <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                    </Form.Text>
+                                    <Form.Label>I'm honored by Name</Form.Label>
+                                    <Form.Control type="email" />
                                 </Form.Group>
                             </div>
                             <div className="col-12 col-md-6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
                                     <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                    <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                    </Form.Text>
+                                    <Form.Control type="email" />
                                 </Form.Group>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-12 col-md-6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                    <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                    </Form.Text>
+                                    <Form.Label>Landline/Phone</Form.Label>
+                                    <Form.Control type="email" />
                                 </Form.Group>
                             </div>
                             <div className="col-12 col-md-6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                    <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                    </Form.Text>
+                                    <Form.Label>What do you want to inquire about?</Form.Label>
+                                    <Form.Control type="email" />
                                 </Form.Group>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-12 col-md-6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                    <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                    </Form.Text>
+                                    <Form.Label>What programs & services are you interested?</Form.Label>
+                                    <Form.Control type="email" />
                                 </Form.Group>
                             </div>
                             <div className="col-12 col-md-6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                    <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                    </Form.Text>
+                                    <Form.Label>Your Address</Form.Label>
+                                    <Form.Control type="email" />
                                 </Form.Group>
                             </div>
                         </div>
 
                         <div className='mb-5'>
-                            <FloatingLabel controlId="floatingTextarea2" label="Comments">
+                            <FloatingLabel controlId="floatingTextarea2">
                                 <Form.Control
                                     as="textarea"
-                                    placeholder="Leave a comment here"
+                                    placeholder="What do you need"
                                     style={{ height: '100px' }}
                                 />
                             </FloatingLabel>
