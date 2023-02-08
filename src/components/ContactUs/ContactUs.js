@@ -12,7 +12,7 @@ const ContactUs = () => {
                 <div className="row">
 
                     <div className="col-12 col-md-6 fira">
-                        <div className='p-5'>
+                        <div className='p-2 p-md-3 p-lg-5'>
                             <h2>CALL US</h2>
                             <hr />
                             <p className='mt-4'>You have an event and want to impress your guests and visitors? All you have to do is submit your application and we promise that you will get the highest degree of organization Submit your request now! We provide catering services for large and small companies and institutions. Our staff is made up of qualified individuals and a highly qualified and experienced chef Weddings, parties and special occasions</p>
@@ -21,7 +21,7 @@ const ContactUs = () => {
                     </div>
 
                     <div className="col-12 col-md-6">
-                        <div className='p-5'>
+                        <div className='p-2 p-md-3 p-lg-5'>
                             <h2>OUR OFFICE</h2>
                             <hr />
                             <p className='mt-4'>Dhaka Bangladesh - asdklfj asldkfj aslkf aadsf - asdf aklsjdf alksdfadsf af ljasf. Use this form for immediate follow-up if you would like us to serve you.. Which type of our professional services are most important to you? Dhaka, Bangladesh <br /> <br />
@@ -32,10 +32,10 @@ const ContactUs = () => {
 
                 </div>
 
-                <div className='my-5 p-5 rounded-4 shadow fira' style={{ backgroundColor: "F2F6F8"}}>
+                <div className='my-3 my-md-5 p-4 p-md-5 rounded-4 shadow fira' style={{ backgroundColor: "F2F6F8"}}>
                     <h3 className='text-center'>I hope your honorable person will fill out this form to serve you to the fullest</h3>
 
-                    <form action="">
+                    <form action="" className='my-4'>
                         <div className="row">
                             <div className="col-12 col-md-6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
