@@ -16,7 +16,7 @@ const Header = () => {
                     <input type="checkbox" id="header1-menu-bar" />
                     <label htmlFor="header1-menu-bar"><FaBars className='text-white'></FaBars></label>
 
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex align-items-center">
 
                         <Link to='/'>
                             <img src={logo} className='ps-3 py-1' style={{ width: '70%' }} alt="" />
