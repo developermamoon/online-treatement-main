@@ -2,7 +2,7 @@ import React from 'react';
 import './ContactUs.css'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
+
 
 
 const ContactUs = () => {

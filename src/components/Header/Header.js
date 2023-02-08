@@ -16,78 +16,89 @@ const Header = () => {
                     <input type="checkbox" id="header1-menu-bar" />
                     <label htmlFor="header1-menu-bar"><FaBars className='text-white'></FaBars></label>
 
-                    <nav className="navbar d-flex align-items-center fw-bold">
+            <div className="d-flex justify-content-center align-items-center">
 
-                        <img src={logo} className='ps-3 py-1' style={{width: '20%'}} alt="" />
+                        <Link to='/'>
+                            <img src={logo} className='ps-3 py-1' style={{ width: '70%' }} alt="" />
+                        </Link>
 
-                        <ul>
-                            <li><Link to='/'>Home</Link></li>
+                        <nav className="navbar d-flex align-items-center fw-bold">
 
-                            <li><span className='downArrow'><Link to='/pages'>Pages</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
-                                <ul>
-                                    <li><Link to='/about-us'>About Us</Link></li>
-                                    <li><Link to='/our-doctor'>Our Doctor</Link></li>
-                                    <li><Link to='/faq'>FaQ</Link></li>
-                                    <li><Link to='/others'>Others</Link></li>
-                                    <li><Link to='/testimonial'>Testimonial</Link></li>
-                                    <li><Link to='/error-page'>Page 404</Link></li>
 
-                                </ul>
-                            </li>
+                            <ul>
+                                <li><Link to='/'>Home</Link></li>
 
-                            <li><span className='downArrow'><Link to='/our-services'>Our Services</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
-                                <ul>
-                                    <li><Link to='/why-online-treat'>Why Online Treat</Link></li>
-                                    <li><Link to='/how-it-works'>How It Works</Link></li>
-                                    <li><Link to='/disease'>Disease</Link></li>
-                                    <li><Link to='/error-page'>Page 404</Link></li>
+                                <li><span className='downArrow'><Link to='/pages'>Pages</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
+                                    <ul>
+                                        <li><Link to='/about-us'>About Us</Link></li>
+                                        <li><Link to='/our-doctor'>Our Doctor</Link></li>
+                                        <li><Link to='/faq'>FaQ</Link></li>
+                                        <li><Link to='/others'>Others</Link></li>
+                                        <li><Link to='/testimonial'>Testimonial</Link></li>
+                                        <li><Link to='/error-page'>Page 404</Link></li>
 
-                                </ul>
-                            </li>
+                                    </ul>
+                                </li>
 
-                            <li><span className='downArrow'><Link to='/study'>Study</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
-                                <ul>
-                                    <li><Link to='/organon-of-medicine'>Organon Of Medicine</Link></li>
-                                    <li><Link to='/materia-medica'>Materia Medica</Link></li>
-                                    <li><Link to='/repertory'>Repertory</Link></li>
-                                    <li><Link to='/practice-of-medicine'>Practice Of Medicine</Link></li>
-                                    <li><Link to='/anatomy-physiology'>Anatomy Physiology</Link></li>
-                                    <li><Link to='/research'>Research</Link></li>
-                                    <li><Link to='/download-book'>Download Book</Link></li>
+                                <li><span className='downArrow'><Link to='/our-services'>Our Services</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
+                                    <ul>
+                                        <li><Link to='/why-online-treat'>Why Online Treat</Link></li>
+                                        <li><Link to='/how-it-works'>How It Works</Link></li>
+                                        <li><Link to='/disease'>Disease</Link></li>
+                                        <li><Link to='/error-page'>Page 404</Link></li>
 
-                                </ul>
-                            </li>
+                                    </ul>
+                                </li>
 
-                            <li><span className='downArrow'><Link to='/testimonial'>Testimonial</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
-                                <ul>
-                                    <li><Link to='/celebraties-testimonial'>Celebraties Testimonial</Link></li>
-                                    <li><Link to='/doctors-testimonial'>Doctors Testimonial</Link></li>
-                                    <li><Link to='/patients-testimonial'>Patients Testimonial</Link></li>
-                                    <li><Link to='/video-testimonial'>Video Testimonial</Link></li>
-                                    <li><Link to='/magazine-testimonial'>Magazine Testimonial</Link></li>
-                                </ul>
-                            </li>
+                                <li><span className='downArrow'><Link to='/study'>Study</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
+                                    <ul>
+                                        <li><Link to='/organon-of-medicine'>Organon Of Medicine</Link></li>
+                                        <li><Link to='/materia-medica'>Materia Medica</Link></li>
+                                        <li><Link to='/repertory'>Repertory</Link></li>
+                                        <li><Link to='/practice-of-medicine'>Practice Of Medicine</Link></li>
+                                        <li><Link to='/anatomy-physiology'>Anatomy Physiology</Link></li>
+                                        <li><Link to='/research'>Research</Link></li>
+                                        <li><Link to='/download-book'>Download Book</Link></li>
 
-                            <li><Link to='/'>Shop</Link></li>
+                                    </ul>
+                                </li>
 
-                            <li><span className='downArrow'><Link to='/blog'>Blog</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
-                                <ul>
-                                    <li><Link to='/up-coming-event'>Up Coming Event</Link></li>
-                                    <li><Link to='/video'>Video</Link></li>
-                                    <li><Link to='/photo'>Photo</Link></li>
-                                    <li><Link to='/event'>Event</Link></li>
-                                    <li><Link to='/media'>Media</Link></li>
-                                    <li><Link to='/knowledge-of-disease'>Knowledge Of Disease</Link></li>
-                                    <li><Link to='/lecture'>Lecture</Link></li>
+                                <li><span className='downArrow'><Link to='/testimonial'>Testimonial</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
+                                    <ul>
+                                        <li><Link to='/celebraties-testimonial'>Celebraties Testimonial</Link></li>
+                                        <li><Link to='/doctors-testimonial'>Doctors Testimonial</Link></li>
+                                        <li><Link to='/patients-testimonial'>Patients Testimonial</Link></li>
+                                        <li><Link to='/video-testimonial'>Video Testimonial</Link></li>
+                                        <li><Link to='/magazine-testimonial'>Magazine Testimonial</Link></li>
+                                    </ul>
+                                </li>
 
-                                </ul>
-                            </li>
+                                <li><Link to='/'>Shop</Link></li>
 
-                            <li><Link to='/contact-us'>Contact Us</Link></li>
+                                <li><span className='downArrow'><Link to='/blog'>Blog</Link> <RiArrowDropDownLine className='fs-3'></RiArrowDropDownLine></span>
+                                    <ul>
+                                        <li><Link to='/up-coming-event'>Up Coming Event</Link></li>
+                                        <li><Link to='/video'>Video</Link></li>
+                                        <li><Link to='/photo'>Photo</Link></li>
+                                        <li><Link to='/event'>Event</Link></li>
+                                        <li><Link to='/media'>Media</Link></li>
+                                        <li><Link to='/knowledge-of-disease'>Knowledge Of Disease</Link></li>
+                                        <li><Link to='/lecture'>Lecture</Link></li>
 
-                        </ul>
+                                    </ul>
+                                </li>
 
-                    </nav>
+                                <li><Link to='/contact-us'>Contact Us</Link></li>
+
+
+                                <button className='btn btn-primary'>Quick Appointment</button>
+                            </ul>
+
+
+                        </nav>
+
+
+            </div>
                 </div>
             </div>
         </div>
