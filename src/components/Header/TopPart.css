@@ -3,3 +3,11 @@
     color: #1B1285;
     margin: 10px 3px;
 }
+
+
+/*------------------- Mobile view  ---------------*/
+@media only screen and (max-width: 576px) {
+    .container a{
+        font-size: 8px;
+    }
+}

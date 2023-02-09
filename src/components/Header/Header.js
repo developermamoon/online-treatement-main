@@ -16,14 +16,18 @@ const Header = () => {
                     <input type="checkbox" id="header1-menu-bar" />
                     <label htmlFor="header1-menu-bar"><FaBars className='text-white'></FaBars></label>
 
-            <div className="d-flex align-items-center">
+                    <Link to='/'>
+                        <img src={logo} className='ps-3 py-1 d-lg-none' style={{ width: '30%' }} alt="" />
+                    </Link>
+
+            
+
+
+                        <nav className="navbar d-flex justify-content-center fw-bold">
 
                         <Link to='/'>
-                            <img src={logo} className='ps-3 py-1' style={{ width: '70%' }} alt="" />
+                            <img src={logo} className='ps-3 py-1 d-none d-lg-block' style={{ width: '70%' }} alt="" />
                         </Link>
-
-                        <nav className="navbar d-flex align-items-center fw-bold">
-
 
                             <ul>
                                 <li><Link to='/'>Home</Link></li>
@@ -91,14 +95,14 @@ const Header = () => {
                                 <li><Link to='/contact-us'>Contact Us</Link></li>
 
 
-                                <button className='btn btn-primary'>Quick Appointment</button>
+                                <button className='btn btn-primary me-3'>Quick Appointment</button>
                             </ul>
 
 
                         </nav>
 
 
-            </div>
+            
                 </div>
             </div>
         </div>
