@@ -2,7 +2,9 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import slider1 from '../images/slider-one.jpg'
 import slider2 from '../images/slider-two.jpg'
+import man1 from '../images/man1.png'
 import './Home.css'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -33,8 +35,11 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <div className="container text-white">
-                <div className="row g-0">
+
+            {/* boxes ------------------------------------------------------ */}
+
+            <div className="container text-white mb-5">
+                <div className="row g-0 ">
 
                     <div className="col-12 col-md-6 col-lg-3 p-3 paste-box-1">
                         <div className='p-4'>
@@ -65,6 +70,24 @@ const Home = () => {
                             <h4 className='pb-3'>Our Medicine</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis semper felis.</p>
                             <button className='btn btn-primary blue-button'>Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/*----------------------------- second part ----------------------- */}
+            <div className='mb-5 bg-white'>
+                <div className="container fira">
+                    <div className="row">
+                        <div className="col-12 col-md-6">
+                            <img src={man1} className="w-100" alt="" />
+                        </div>
+                        <div className="col-12 col-md-6">
+                            <h3>Introduction of Homeopathy</h3>
+                            <h5>Christian Friedrich Samuel Hahnemann</h5>
+                            <p>M.D. (1755-1843)</p>
+                            <h3>CREATION OF HOMEOPATHY:</h3>
+                            <p>Hahnemann was dissatisfied with the state of medicine in his time, and particularly objected to practices such as bloodletting. He claimed that the medicine he had been taught to practice sometimes did the patient more harm than good: My sense of duty would not easily allow me to treat the unknown pathological state of my suffering brethren with these unknown medicines. The thought of becoming in this way a murderer or malefactor towards the life of my fellow human beings was most terrible to me, so terrible and disturbing that I wholly gave up my practice in the first years of my married life and occupied myself solely with chemistry and writing. After giving up his practice around 1784, Hahnemann made his living chiefly as a writer and translator, while resolving also to investigate the causes of medicine's alleged errors. While translating William Cullen's A Treatise on the Materia Medica, Hahnemann encountered the claim that cinchona, the bark of a Peruvian tree, was effective in treating malaria because of its astringency. Hahnemann believed that other astringent substances are not effective against malaria and began to research cinchona's effect on the human body by self-application. <Link>Learn More</Link> </p>
                         </div>
                     </div>
                 </div>
