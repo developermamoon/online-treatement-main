@@ -12,7 +12,7 @@ const Header = () => {
         <div style={{ backgroundColor: "#8E8E8E"}}>
             <TopPart></TopPart>
             <div>
-                <div className="header1">
+                <div className="header1 fira">
                     <input type="checkbox" id="header1-menu-bar" />
                     <label htmlFor="header1-menu-bar"><FaBars className='text-white'></FaBars></label>
 
@@ -23,7 +23,7 @@ const Header = () => {
             
 
 
-                        <nav className="navbar d-flex justify-content-center fw-bold">
+                        <nav className="navbar d-flex justify-content-center">
 
                         <Link to='/'>
                             <img src={logo} className='ps-3 py-1 d-none d-lg-block' style={{ width: '70%' }} alt="" />

@@ -27,6 +27,7 @@
 
 .navbar ul li>a {
     text-decoration: none;
+    font-weight: lighter;
 }
 
 .header1 .navbar ul li a {
