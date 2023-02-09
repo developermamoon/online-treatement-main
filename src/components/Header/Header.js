@@ -23,7 +23,7 @@ const Header = () => {
             
 
 
-                        <nav className="navbar d-flex justify-content-center">
+                    <nav className="navbar d-flex justify-content-center" >
 
                         <Link to='/'>
                             <img src={logo} className='ps-3 py-1 d-none d-lg-block' style={{ width: '70%' }} alt="" />

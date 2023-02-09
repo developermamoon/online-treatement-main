@@ -1,15 +1,16 @@
 
 .header1 {
-    position: relative;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    background: rgb(8, 20, 37);
+    /* background: rgb(8, 20, 37); */
     background-color: #8E8E8E;
     /* box-shadow: 0 5px 10px rgba(0, 0, 0, .1); */
     /* padding: 0 20px; */
     z-index: 2000;
 }
+
 
 .downArrow,
 .downArrow a {
