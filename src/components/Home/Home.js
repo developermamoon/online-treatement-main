@@ -7,6 +7,26 @@ import './Home.css'
 import { Link } from 'react-router-dom';
 import signature from '../images/signature.png'
 import woman from '../images/woman1.png'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import doctor1 from '../images/image-2.jpg'
+import doctor2 from '../images/woman2.jpg'
+import doctor3 from '../images/woman3.jpg'
+import doctor4 from '../images/woman4.jpg'
+
+const doctorData1 = [
+    {position: "Pediatrician", name: "Sussie Wolf", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis.", img: doctor1},
+    {position: "Pediatrician", name: "Sussie Wolf", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis.", img: doctor2},
+    {position: "Pediatrician", name: "Sussie Wolf", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis.", img: doctor1},
+    {position: "Pediatrician", name: "Sussie Wolf", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis.", img: doctor2},
+]
+
+const doctorData2 = [
+    { position: "Pediatrician", name: "Mussie Wolf", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis.", img: doctor3 },
+    { position: "Pediatrician", name: "Mussie Wolf", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis.", img: doctor4 },
+    { position: "Pediatrician", name: "Mussie Wolf", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis.", img: doctor3 },
+    { position: "Pediatrician", name: "Mussie Wolf", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis.", img: doctor4 },
+]
 
 const Home = () => {
     return (
@@ -100,11 +120,10 @@ const Home = () => {
                 <div className="our-team">
                     <div className="container fira">
                         <div className="row align-items-end">
-                            <div className="col-12 col-md-7">
-                                <div className='py-5'>
+                            <div className="col-12 col-lg-7">
+                                <div className='py-5 text-center text-lg-start'>
                                     <p className='m-0' style={{ fontSize: "20px" }}>Dr. Stephanie Wosniack</p>
-                                    {/* <hr className='name-line' /> */}
-                                    <div className="name-line mb-5"></div>
+                                    <div className="name-line mb-5 d-none d-lg-block"></div>
                                     <h1 className='fw-bold mb-4'>OUR <span style={{ color: '#1B1285'}}>TEAM</span></h1>
                                     <p style={{fontSize: "18px"}}>
                                         Dr. Stephanie Wosniack is is dedicated to providing her patients with the best possible care. We at MediCare are focused on helping you. After receiving successful care for various aches and pains over the years, Dr. Woshiack found her calling to help others get well.
@@ -113,13 +132,70 @@ const Home = () => {
                                     <img src={signature} alt="" />
                                 </div>
                             </div>
-                            <div className="col-12 col-md-5">
-                                    <div className=''>
+                            <div className="col-12 col-lg-5">
+                                    <div className='text-md-center'>
                                         <img src={woman} alt="" />
                                     </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* our doctors slider large screen---------------------------- */}
+            <div className='py-5'>
+                <div className="container">
+                    <div>
+                        <p className='m-0 fira fw-semibold' style={{ fontSize: "35px" }}>OUR DOCTOR</p>
+                        <div className="name-line mb-5 d-none d-lg-block"></div>
+                    </div>
+
+                    
+                        <Carousel>
+                            <Carousel.Item interval={3000}>
+                                <div className='d-flex gap-3'>
+                            {doctorData1.map(data =>
+                                    <Card>
+                                        <Card.Img variant="top" src={data.img}/>
+                                        <Card.Body>
+                                            <Card.Title>{data.name}</Card.Title>
+                                            <Card.Text>
+                                                {data.text}
+                                            </Card.Text>
+                                            <Button variant="primary">Appointment</Button>
+                                        </Card.Body>
+                                    </Card>
+                            )}
+
+                                   
+                                </div>
+
+                            </Carousel.Item>
+
+
+                            <Carousel.Item interval={3000}>
+                            <div className='d-flex gap-3'>
+                            {doctorData2.map(data =>
+                                    <Card>
+                                        <Card.Img variant="top" src={data.img}/>
+                                        <Card.Body>
+                                            <Card.Title>{data.name}</Card.Title>
+                                            <Card.Text>
+                                                {data.text}
+                                            </Card.Text>
+                                            <Button variant="primary">Appointment</Button>
+                                        </Card.Body>
+                                    </Card>
+                            )}
+
+                                   
+                                </div>
+
+                            </Carousel.Item>
+                        </Carousel>
+                    
+
+
                 </div>
             </div>
 
