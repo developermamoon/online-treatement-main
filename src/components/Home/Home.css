@@ -23,3 +23,21 @@
 .blue-button{
     background-color: #0B5ED7 !important;
 }
+
+.our-team{
+    background-image: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 520px; */
+    /* width: 100%; */
+}
+
+.our-team img{
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+.name-line{
+    width: 10%;
+    border: 1px solid #1B1285;
+}

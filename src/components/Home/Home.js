@@ -5,10 +5,12 @@ import slider2 from '../images/slider-two.jpg'
 import man1 from '../images/man1.png'
 import './Home.css'
 import { Link } from 'react-router-dom';
+import signature from '../images/signature.png'
+import woman from '../images/woman1.png'
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-white'>
             <Carousel>
                 <Carousel.Item interval={1000}>
                     <img
@@ -76,7 +78,7 @@ const Home = () => {
             </div>
 
             {/*----------------------------- second part ----------------------- */}
-            <div className='mb-5 bg-white'>
+            <div className='my-5 py-5 bg-white'>
                 <div className="container fira">
                     <div className="row">
                         <div className="col-12 col-md-6">
@@ -92,6 +94,35 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            {/*----------------------- our team part ----------------------- */}
+            <div>
+                <div className="our-team">
+                    <div className="container fira">
+                        <div className="row align-items-end">
+                            <div className="col-12 col-md-7">
+                                <div className='py-5'>
+                                    <p className='m-0' style={{ fontSize: "20px" }}>Dr. Stephanie Wosniack</p>
+                                    {/* <hr className='name-line' /> */}
+                                    <div className="name-line mb-5"></div>
+                                    <h1 className='fw-bold mb-4'>OUR <span style={{ color: '#1B1285'}}>TEAM</span></h1>
+                                    <p style={{fontSize: "18px"}}>
+                                        Dr. Stephanie Wosniack is is dedicated to providing her patients with the best possible care. We at MediCare are focused on helping you. After receiving successful care for various aches and pains over the years, Dr. Woshiack found her calling to help others get well.
+                                    </p>
+
+                                    <img src={signature} alt="" />
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-5">
+                                    <div className=''>
+                                        <img src={woman} alt="" />
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
